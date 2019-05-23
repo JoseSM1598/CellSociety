@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Thomas Schelling</author>
+    <name>Segregation</name>
+    <description>Depicts preferences to segregate</description>
+    <gridHeight>30</gridHeight>
+    <gridWidth>30</gridWidth>
+    <numStates>2</numStates>
+
+    <gridShape>rectangle</gridShape>
+    <gridOutline>on</gridOutline>
+
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <!--Enter the initial positions of your cell-->
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+
+    <cellState type = "EMPTY">50</cellState>
+    <cellState type = "X">430</cellState>
+    <cellState type = "O">420</cellState>
+    <cellRule type = "satisfied">.56</cellRule> <!--in percent-->
+
+</CellAutomata>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Angela B. Shiflet</author>
+    <name>Fire</name>
+    <description>Depicts the spread of fire</description>
+    <gridHeight>2</gridHeight>
+    <gridWidth>2</gridWidth>
+    <gridShape>triangle</gridShape>
+    <gridOutline>on</gridOutline>
+
+    <!--which kind edge case: finite, toroidal, infinite-->
+    <edgeTypes>toroidal</edgeTypes>
+
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <!--Enter the initial positions of your cell-->
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+    <numStates>2</numStates>
+    <cellState type = "EMPTY">2</cellState>
+    <cellState type = "BURNING">1</cellState>
+    <cellState type = "TREE">1</cellState>
+    <cellRule type = "probCatch">0.40</cellRule>
+
+</CellAutomata>

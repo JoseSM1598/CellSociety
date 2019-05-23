@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Author</author>
+    <name>RPS</name>
+    <description>Visual representation of rock, paper, scissors</description>
+    <gridHeight>20</gridHeight>
+    <gridWidth>20</gridWidth>
+    <numStates>2</numStates>
+
+    <gridShape>Square</gridShape>
+    <gridOutline>on</gridOutline>
+
+    <!--which kind edge case: finite, toroidal, infinite-->
+    <edgeTypes>toroidal</edgeTypes>
+
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <!--Enter the initial positions of your cell-->
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+
+    <cellState type = "ROCK">150</cellState>
+    <cellState type = "PAPER">150</cellState>
+    <cellState type = "SCISSOR">100</cellState>
+    <cellRule type = "Threshold">2</cellRule>
+
+</CellAutomata>

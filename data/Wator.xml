@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Mike Scott</author>
+    <name>WATOR</name>
+    <description>Interaction predators, prey, and their reproduction</description>
+    <gridHeight>20</gridHeight> <!-- 20 -->
+    <gridWidth>20</gridWidth> <!-- 20 -->
+    <numStates>3</numStates>
+    <!--Enter in initial config grid shape: hexagon, triangle, rectangle-->
+    <gridShape>hexagon</gridShape>
+    <gridOutline>on</gridOutline>
+
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <!--Enter the initial positions of your cell-->
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+
+
+    <!--Enter in cell type and the percent/count of each cell-->
+    <cellColor type = "SHARK">red</cellColor>
+    <cellColor type = "FISH">pink</cellColor>
+    <cellColor type = "WATER">cyan</cellColor>
+
+    <cellState type = "WATER">280</cellState> <!-- 300 -->
+    <cellState type = "SHARK">40</cellState> <!-- 0 -->
+    <cellState type = "FISH">80</cellState> <!-- 100 -->
+    <cellRule type = "life points">5</cellRule>
+    <cellRule type = "fish reproduce">4</cellRule>
+    <cellRule type = "shark reproduce">20</cellRule>
+    <cellRule type = "energy eat">0.5</cellRule>
+
+</CellAutomata>
+

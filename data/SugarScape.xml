@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Joshua M. Epstein and Robert Axtell</author>
+    <name>SugarScape</name>
+    <description>Depicts sugar depletion and agents</description>
+    <gridHeight>30</gridHeight>
+    <gridWidth>30</gridWidth>
+    <gridShape>rectangle</gridShape>
+    <gridOutline>on</gridOutline>
+    <numStates>2</numStates>
+    <inputFormat>count</inputFormat>
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+    <cellState type = "PATCH">900</cellState>
+    <cellState type = "AGENT">450</cellState>
+    <cellRule type = "patchMaxCapacity">10</cellRule>
+    <cellRule type = "sugarMetabolism">3</cellRule>
+    <cellRule type = "vision">4</cellRule>
+    <cellRule type = "initSugar">5</cellRule>
+</CellAutomata>

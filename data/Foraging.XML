@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>Thomas Schelling</author>
+    <name>Foraging</name>
+    <description> Depicts ants foraging for food</description>
+    <gridHeight>20</gridHeight>
+    <gridWidth>20</gridWidth>
+    <gridShape>triangle</gridShape>
+    <gridOutline>on</gridOutline>
+    <numStates>2</numStates>
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <cellState type = "NEST">5</cellState>
+    <cellState type = "FOOD">17</cellState>
+    <cellState type = "EMPTY">378</cellState>
+    <cellRule type = "AntsPerNest"> 1</cellRule>
+    <cellRule type = "DecayRate"> .2</cellRule>
+    <cellRule type = "PherIncrease">1</cellRule>
+
+</CellAutomata>

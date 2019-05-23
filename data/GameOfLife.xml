@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CellAutomata>
+    <author>John Horton Conway</author>
+    <name>Game of Life</name>
+    <description>Cell interaction and reproduction</description>
+    <gridHeight>20</gridHeight>
+    <gridWidth>20</gridWidth>
+    <gridShape>hexagon</gridShape>
+    <gridOutline>on</gridOutline>
+    <description> Depicts the patterns of a game of life</description>
+
+    <!--Enter in initial config settings: percent (percentage of each cell), count (number of
+    each cell), and hardcode(where you)-->
+    <inputFormat>count</inputFormat>
+
+    <!--Enter the initial positions of your cell-->
+    <row>ALIVE ALIVE</row>
+    <row>dead dead</row>
+
+    <!--Enter in cell type and the percent/count of each cell-->
+    <cellState type = "ALIVE">100</cellState>
+    <cellState type = "DEAD">300</cellState>
+
+    <!--Enter in cell type and the percent/count of each cell-->
+    <cellColor type = "ALIVE">blue</cellColor>
+    <cellColor type = "DEAD">white</cellColor>
+
+    <!--Enter in rules of the simulation-->
+    <cellRule type = "reproduce">3</cellRule>   <!--Exactly 3-->
+    <cellRule type = "overpopulate">3</cellRule>  <!--More than 3-->
+    <cellRule type = "underpopulate">2</cellRule> <!--Less than 3-->
+
+</CellAutomata>
